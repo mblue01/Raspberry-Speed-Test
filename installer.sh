@@ -1,9 +1,11 @@
 #INSTALL RASPBERRY PI SPEED TEST
 # Run this file as root
+# ***** IMPORTANT ***** Uncomment deb-src line in /etc/apt.sources.list
 
 # update system
-apt-get update
-apt-get upgrade
+apt update
+apt upgrade
+apt autoremove
 
 # install needed packages
 apt install apt-transport-https gnupg1 dirmngr
